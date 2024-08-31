@@ -1,0 +1,12 @@
+C:\temp\clean-architecture\Catalogo.Domain\bin\Debug\net8.0\Catalogo.Domain.deps.json
+C:\temp\clean-architecture\Catalogo.Domain\bin\Debug\net8.0\Catalogo.Domain.dll
+C:\temp\clean-architecture\Catalogo.Domain\bin\Debug\net8.0\Catalogo.Domain.pdb
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.AssemblyInfoInputs.cache
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.AssemblyInfo.cs
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.csproj.CoreCompileInputs.cache
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.sourcelink.json
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.dll
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\refint\Catalogo.Domain.dll
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\Catalogo.Domain.pdb
+C:\temp\clean-architecture\Catalogo.Domain\obj\Debug\net8.0\ref\Catalogo.Domain.dll

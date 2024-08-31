@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9S6l6V2f0ts=",
+  "dgSpecHash": "x+GLSBphO8A=",
   "success": true,
-  "projectFilePath": "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj",
+  "projectFilePath": "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

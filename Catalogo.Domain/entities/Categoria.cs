@@ -1,0 +1,42 @@
+using Catalogo.Domain.Validation;
+using System.Collections.Generic;
+
+namespace Catalogo.Domain.Entities
+{
+    public sealed class Categoria : Entity
+    {
+        public Categoria(string nome, string imagemUrl)
+        {
+            ValidateDomain(nome, imagemUrl);
+        }
+
+        public Categoria(int id, string nome, string imagemUrl)
+        {
+            DomainExceptionValidation.When(id < 0, "valor de Id inválido");
+            Id = id;
+            ValidateDomain(nome, imagemUrl);
+        }
+
+        public string Nome { get; private set; }
+        public string ImagemUrl { get; private set; }
+        public ICollection<Produto> Produtos { get; set; }
+
+        private void ValidateDomain(string nome, string imagemUrl)
+        {
+            DomainExceptionValidation.When(string.IsNullOrWhiteSpace(nome),
+                "Nome inválido. O nome é obrigatório.");
+
+            DomainExceptionValidation.When(string.IsNullOrWhiteSpace(imagemUrl),
+                "Nome da imagem inválido. O nome é obrigatório.");
+
+            DomainExceptionValidation.When(nome.Length < 3,
+                "Nome inválido. O nome precisa ter no mínimo 3 caracteres.");
+
+            DomainExceptionValidation.When(imagemUrl.Length < 5,
+                "Nome da imagem inválido. O nome da imagem precisa ter no mínimo 5 caracteres.");
+
+            Nome = nome;
+            ImagemUrl = imagemUrl;
+        }
+    }
+}

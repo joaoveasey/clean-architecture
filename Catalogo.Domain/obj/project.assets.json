@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\joao.pedro\\.nuget\\packages\\": {}
+    "C:\\Users\\jovep\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj",
+      "projectUniqueName": "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj",
       "projectName": "Catalogo.Domain",
-      "projectPath": "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj",
-      "packagesPath": "C:\\Users\\joao.pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\Catalogo\\Catalogo.Domain\\obj\\",
+      "projectPath": "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj",
+      "packagesPath": "C:\\Users\\jovep\\.nuget\\packages\\",
+      "outputPath": "C:\\temp\\clean-architecture\\Catalogo.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\joao.pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jovep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
