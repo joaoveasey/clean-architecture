@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\Catalogo\\Catalogo.Application\\Catalogo.Application.csproj": {}
+    "C:\\temp\\clean-architecture\\Catalogo.Application\\Catalogo.Application.csproj": {}
   },
   "projects": {
-    "C:\\temp\\Catalogo\\Catalogo.Application\\Catalogo.Application.csproj": {
+    "C:\\temp\\clean-architecture\\Catalogo.Application\\Catalogo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\Catalogo\\Catalogo.Application\\Catalogo.Application.csproj",
+        "projectUniqueName": "C:\\temp\\clean-architecture\\Catalogo.Application\\Catalogo.Application.csproj",
         "projectName": "Catalogo.Application",
-        "projectPath": "C:\\temp\\Catalogo\\Catalogo.Application\\Catalogo.Application.csproj",
+        "projectPath": "C:\\temp\\clean-architecture\\Catalogo.Application\\Catalogo.Application.csproj",
         "packagesPath": "C:\\Users\\joao.pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\Catalogo\\Catalogo.Application\\obj\\",
+        "outputPath": "C:\\temp\\clean-architecture\\Catalogo.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joao.pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj": {
-                "projectPath": "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj"
+              "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj": {
+                "projectPath": "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj"
               }
             }
           }
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -69,14 +75,14 @@
         }
       }
     },
-    "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj": {
+    "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj",
+        "projectUniqueName": "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj",
         "projectName": "Catalogo.Domain",
-        "projectPath": "C:\\temp\\Catalogo\\Catalogo.Domain\\Catalogo.Domain.csproj",
+        "projectPath": "C:\\temp\\clean-architecture\\Catalogo.Domain\\Catalogo.Domain.csproj",
         "packagesPath": "C:\\Users\\joao.pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\Catalogo\\Catalogo.Domain\\obj\\",
+        "outputPath": "C:\\temp\\clean-architecture\\Catalogo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joao.pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
