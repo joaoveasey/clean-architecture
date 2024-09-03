@@ -1,5 +1,6 @@
 ﻿using Catalogo.Domain.Entities;
 using Catalogo.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +11,47 @@ namespace Catalogo.Infrastructure.Repositories
 {
     public class CategoriaRepository : ICategoriaRepository
     {
-        public Task<Categoria> CreateAsync(Categoria categoria)
+        private readonly DbContext _context;
+
+        public CategoriaRepository(DbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<Categoria> GetByIdAsync(int? id)
+        public async Task<IEnumerable<Categoria>> GetCategoriasAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Set<Categoria>().ToListAsync();
         }
 
-        public Task<IEnumerable<Categoria>> GetCategoriasAsync()
+        public async Task<Categoria> GetByIdAsync(int? id)
         {
-            throw new NotImplementedException();
+            if (id == null)
+            {
+                return null;
+            }
+
+            return await _context.Set<Categoria>().FindAsync(id);
         }
 
-        public Task<Categoria> RemoveAsync(Categoria categoria)
+        public async Task<Categoria> CreateAsync(Categoria categoria)
         {
-            throw new NotImplementedException();
+            _context.Set<Categoria>().Add(categoria);
+            await _context.SaveChangesAsync();
+            return categoria;
         }
 
-        public Task<Categoria> UpdateAsync(Categoria categoria)
+        public async Task<Categoria> UpdateAsync(Categoria categoria)
         {
-            throw new NotImplementedException();
+            _context.Set<Categoria>().Update(categoria);
+            await _context.SaveChangesAsync();
+            return categoria;
+        }
+
+        public async Task<Categoria> RemoveAsync(Categoria categoria)
+        {
+            _context.Set<Categoria>().Remove(categoria);
+            await _context.SaveChangesAsync();
+            return categoria;
         }
     }
 }
